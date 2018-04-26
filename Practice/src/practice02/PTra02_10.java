@@ -7,6 +7,9 @@ package practice02;
  */
 
 public class PTra02_10 {
+	/**
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		int moneyInHand = 1000;	// 所持金
 		int coffee = 120;	// コーヒーの値段
@@ -22,5 +25,9 @@ public class PTra02_10 {
 		 * ※ プログラムは何行書いても良いです
 		 */
 
+		double i = moneyInHand - (coffee * 1.08 * 2 + snack * 1.08);
+
+
+		System.out.println((int)i);
 	}
 }
