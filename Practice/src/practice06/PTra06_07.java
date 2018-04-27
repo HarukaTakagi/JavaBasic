@@ -24,6 +24,20 @@ public class PTra06_07 {
 		 * ■■□□□
 		 * ■□□□□
 		 */
+		for (int i = 0; i < 10; i++) { //行
+			for (int j = 0; j < 5; j++) { //列
+				if (j < i && i < 6) {
+					System.out.print("■");
+				} else if (i < 6) {
+					System.out.print("□");
+				} else if (i >= 6 && j < (10 - i)) {
+					System.out.print("■");
+				} else {
+					System.out.print("□");
+				}
+			}
 
+			System.out.println();
+		}
 	}
 }
