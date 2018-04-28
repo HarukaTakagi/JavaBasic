@@ -12,7 +12,8 @@ public class PTra08_04 {
 		String message = "Hello, world!";
 
 		// ★ メソッドconvertMessageを（変数message）で呼び出してください
-
+		coverMessage(message);
+		
 	}
 
 	/*
@@ -24,5 +25,8 @@ public class PTra08_04 {
 	 *
 	 * 引数で渡された値の前後に 「 」 を付与して出力するメソッド（"「"と引数と"」"の連結）
 	 */
+	public static void coverMessage(String str) {
+		System.out.println("「" + str + "」");
+	}
 
 }

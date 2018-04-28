@@ -1,4 +1,5 @@
 package practice08;
+
 /*
  * PTra08_03.java
  *   作成	LIKEIT	2017
@@ -11,8 +12,11 @@ public class PTra08_03 {
 
 		// ★ 0～100のランダムな値を取得して、変数numberに代入してください
 
+		int random = new java.util.Random().nextInt(101);
+		int number = random;
 
 		// ★ 変数resultを宣言し、メソッドisEvenNumberを（変数number）で呼び出した結果を代入してください
+		boolean result = isEvenNumber(number);
 
 
 		if (result) {
@@ -31,4 +35,11 @@ public class PTra08_03 {
 	 *
 	 * 引数で渡された内容が偶数ならtrue、奇数ならfalseを返すメソッド
 	 */
+	public static boolean isEvenNumber(int x) {
+		if(x % 2 == 0) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 }
