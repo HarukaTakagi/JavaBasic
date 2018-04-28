@@ -47,18 +47,24 @@ public class PTra10_05 {
 		 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
-		int n = 0;
 		int progress = 0;
-		int
+		int n = 0;
+		while (true) {
+			int ru = car.run();
+			n++;
+			progress += ru;
+			System.out.println(progress);
 
+			if (ru == -1) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
 
-		while((distance - progress) > 0){
-			progress += car.run();
-
+			if (progress >= distance) {
+				System.out.println("目的地まで" + n + "時間かかりました。残りのガソリンは、" + car.gasoline + "リットルです。");
+				break;
+			}
 
 		}
-		n =
-		System.out.println("目的地にまで" + n + "時間かかりました。" + "残りのガソリンは" + (car.gasoline - n) + "リットルです");
-
 	}
 }
